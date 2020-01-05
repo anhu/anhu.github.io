@@ -1,5 +1,5 @@
 = Anthony's Open Source Contributions =
-:icons: font
+:stylesheet: dark.css
 
 NOTE: Only authorship is claimed.  Unless explicitly stated in the source files, there is no claim to copyright nor ownership and none should be inferred. 
 

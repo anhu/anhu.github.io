@@ -1,5 +1,5 @@
 = Stuff Anthony Has Made =
-:icons: font
+:stylesheet: dark.css
 
 NOTE: Because I would rather spend months making it instead of a few dollars paying for it.
 
