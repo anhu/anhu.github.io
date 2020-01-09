@@ -6,10 +6,10 @@
 .3+a|
 === Pages ===
 
-* Anthony's Open Source Contributions
-* Anthony's Public LinkedIn Profile
-* Stuff Anthony Has Made
-* Anthony's Thoughts on Leadership
+* link:oss_contributions.html[Anthony's Open Source Contributions]
+* https://www.linkedin.com/in/anthonyhu/[Anthony's Public LinkedIn Profile]
+* link:stuff_made.html[Stuff Anthony Has Made]
+* link:leadership.html[Anthony's Thoughts on Leadership]
 
 a|
 == Knock Knock... ==
