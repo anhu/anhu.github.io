@@ -1,7 +1,7 @@
 = Anthony's Thoughts on Leadership =
 :stylesheet: dark.css
 
-NOTE: todo.
+NOTE: Figure it out for yourself.
 
 [frame=none]
 |===
