@@ -1,15 +1,20 @@
 = Anthony.Hu =
 :stylesheet: dark.css
 
+NOTE: To All the other Anthony Hu's out there, sorry guys, I got http://anthony.hu
+
 [cols="6,10",frame=topbot]
 |===
 .3+a|
 === Pages ===
 
 * link:oss_contributions.html[Anthony's Open Source Contributions]
-* https://www.linkedin.com/in/anthonyhu/[Anthony's Public LinkedIn Profile]
 * link:stuff_made.html[Stuff Anthony Has Made]
 * link:leadership.html[Anthony's Thoughts on Leadership]
+
+=== Links ===
+
+* https://www.linkedin.com/in/anthonyhu/[Anthony's Public LinkedIn Profile]
 
 a|
 == Knock Knock... ==
@@ -23,11 +28,6 @@ me: Anthony.
 you: Anthony Hu?
 
 me: That's right. How did you know?
-
-a|
-== Sorry Guys... ==
-
-To All the other Anthony Hu's out there, sorry guys, I got http://anthony.hu
 
 a|
 == Blog? ==
