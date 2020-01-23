@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>Anthony&#8217;s Open Source Contributions</title>
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import "asciidoctor.css"; /* Default asciidoc style framework - important */
+
+/* CUSTOMISATIONS */
+/* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
+:root{
+--maincolor:#282c34;
+--primarycolor:#f39c12;
+--secondarycolor:#03a9f4;
+--tertiarycolor:#4db6ac;
+--sidebarbackground:#21252b;
+--linkcolor:#f44336;
+--linkcoloralternate:#ff9800;
+--white:#FFFFFF;
+}
+
+/* Text styles */
+
+body{font-family: "Noto Sans",sans-serif;background-color: var(--maincolor);color:var(--white);}
+
+h1{color:var(--primarycolor) !important;font-family:"Noto Sans",sans-serif;}
+h2,h3,h4,h5,h6{color:var(--secondarycolor) !important;font-family:"Noto Sans",sans-serif;}
+.title{color:var(--white) !important;font-family:"Noto Sans",sans-serif;font-style: normal; font-weight: normal;}
+p{font-family: "Noto Sans",sans-serif ! important}
+#toc.toc2 a:link{color:var(--linkcolor);}
+blockquote{color:var(--tertiarycolor) !important}
+.quoteblock{color:var(--white)}
+code{color:var(--linkcoloralternate);background-color: var(--sidebarbackground) !important}
+
+
+/* Table styles */
+th{background-color: var(--maincolor);color:var(--white) !important;}
+td{background-color: var(--maincolor);color: var(--linkcoloralternate) !important}
+
+
+#toc.toc2{background-color:var(--sidebarbackground);}
+#toctitle{color:var(--white);}
+
+/* Responsiveness fixes */
+video {
+  max-width: 100%;
+}
+
+@media all and (max-width: 600px) {
+  table {
+    width: 55vw!important;
+    font-size: 3vw;
+  }
+}
+
+
+</style>
+</head>
+<body class="article">
+<div id="header">
+<h1>Anthony&#8217;s Open Source Contributions</h1>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Only authorship is claimed.  Unless explicitly stated in the source files, there is no claim to copyright nor ownership and none should be inferred.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_professional">Professional</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_blackberry_accessibility_guidance_and_best_practices_sample_application">BlackBerry Accessibility Guidance and Best Practices Sample Application</h3>
+<div class="paragraph">
+<p>I was tasked with helping internal application developers work our their plan and approach for how they would implement their Accessibility requirements.  Over and over again, I got questions about how to approach the same problems.  So, I decided to write a sample application to show developers the tricks and techniques to make their applications accessible.   The application shows typical cases of coding pitfalls that happened because of a lack of forethought regarding accessibility.  Each case is then followed by a fix and an explanation of what the fix achieves.  I was then asked to do a presentation based on the application for external developers at BBJam Asia 2013.  Please have a look at the following sample:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/blackberry/Presentations/tree/master/2013-BlackBerryJam-Asia/JAM838/BeforeA11yAndAfter/">BeforeA11yAndAfter</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_image_decoder_integration_into_webkit_for_blackberry_browser">Image decoder integration into Webkit for BlackBerry Browser</h3>
+<div class="paragraph">
+<p>I authored the following C++ code and header file.  This integrates a custom file format developed by RIM/SlipStream into Webkit allowing the BlackBerry browser to decode these files.  This is not the most efficient nor correct implementation that I could have done.  For example, I dereference pointers and then increment them.  I could have done that in a single line of code or found other faster ways to do that.  I was depending on the compiler to help me optimize while allowing my code to be more readable. One regret I have about this particular piece of code is that I use malloc() instead of new and don&#8217;t check for NULL as its return value.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/blackberry/WebKit-Smartphone/blob/master/webkit/WebCore/platform/image-decoders/rxi/RxIImageDecoder.cpp">RxIImageDecoder.cpp</a></p>
+</li>
+<li>
+<p><a href="https://github.com/blackberry/WebKit-Smartphone/blob/master/webkit/WebCore/platform/image-decoders/rxi/RxIImageDecoder.h">RxIImageDecoder.h</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_samples_for_the_blackberry_playbook">Samples for the BlackBerry PlayBook</h3>
+<div class="paragraph">
+<p>I helped maintain and add features to the NDK (Native Development Kit) samples.
+I authored some and maintained all of the samples.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://blackberry.github.com/ndk/samples.html" class="bare">http://blackberry.github.com/ndk/samples.html</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sdl_audio_driver_for_playbook">SDL Audio Driver for PlayBook</h3>
+<div class="paragraph">
+<p>There is a port of the SDL library to the BlackBerry PlayBook.  I wrote an audio driver for that port, but the default one is the original QNX Neutrino driver.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/anhu/SDL/tree/emulate/src/audio/playbook" class="bare">https://github.com/anhu/SDL/tree/emulate/src/audio/playbook</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sdl_autoconf_integration_for_playbook">SDL Autoconf Integration for Playbook</h3>
+<div class="paragraph">
+<p>The SDL library port was originally built with the IDE.  I added in some scripts to build the library and tests for the PlayBook using configure and the autoconf tools.  I also added scripts that deploy the test apps from the build machine to the playbook.  This is primarily useful as an example of how to use autoconf to build other projects for the PlayBook. Please see the GitHub BlackBerry SDL Project page and look for commits by anhu.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/blackberry/SDL" class="bare">https://github.com/blackberry/SDL</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_personal">Personal</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_minor_bug_fix_for_eqonomize">Minor Bug Fix for Eqonomize</h3>
+<div class="paragraph">
+<p>Eqonomize! is personal accounting system that focuses on simplicity and ease of use.  There was a problem where the .eqz file extension filter was not appearing in the open file and save file dialogs.  I submitted a minor patch that fixed this problem.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="patch.filefiltereqz">The Patch</a></p>
+</li>
+<li>
+<p><a href="https://sourceforge.net/projects/eqonomize/">The submission on SourceForge.net</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_string_substitution_with_file">String Substitution With File</h3>
+<div class="paragraph">
+<p>This is a rudimentary text processing programming.  It probably would have been simpler in just about any other language, but I chose to do it in C for the fun of it.  It searches for a line containing a match of the substitution string in the input file.  Upon finding the match, it replaces the line with the contents of the substitution file and writes out the results to the output file.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="sswf.c">sswf.c</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-01-08 22:25:10 EST
+</div>
+</div>
+</body>
+</html>
