@@ -1,0 +1,40 @@
+Index: src/eqonomize.cpp
+===================================================================
+--- src/eqonomize.cpp	(revision 10)
++++ src/eqonomize.cpp	(working copy)
+@@ -4569,7 +4569,7 @@
+ 
+ void Eqonomize::fileOpen() {
+ 	if(!askSave()) return;
+-	KUrl url = KFileDialog::getOpenUrl(KUrl(), "application/x-eqonomize", this);
++	KUrl url = KFileDialog::getOpenUrl(KUrl(), "*.eqz", this);
+ 	if(!url.isEmpty()) openURL(url);
+ }
+ void Eqonomize::fileOpenRecent(const KUrl &url) {
+@@ -4582,7 +4582,7 @@
+ }
+ void Eqonomize::fileSave() {
+ 	if(!current_url.isValid()) {
+-		KUrl file_url = KFileDialog::getSaveUrl(KUrl("budget"), "application/x-eqonomize", this);
++		KUrl file_url = KFileDialog::getSaveUrl(KUrl("budget"), "*.eqz", this);
+ 		if (!file_url.isEmpty() && file_url.isValid()) {
+ 			saveURL(file_url);
+ 		}
+@@ -4592,7 +4592,7 @@
+ }
+ 
+ void Eqonomize::fileSaveAs() {
+-	KUrl file_url = KFileDialog::getSaveUrl(current_url.directory(), "application/x-eqonomize", this);
++	KUrl file_url = KFileDialog::getSaveUrl(current_url.directory(), "*.eqz", this);
+ 	if (!file_url.isEmpty() && file_url.isValid()) {
+ 		saveURL(file_url);
+ 	}
+@@ -4605,7 +4605,7 @@
+ 	else b_save = KMessageBox::warningYesNoCancel(this, i18n("The current file has been modified. Do you want to save it?"));
+ 	if(b_save == KMessageBox::Yes) {
+ 		if(!current_url.isValid()) {
+-			KUrl file_url = KFileDialog::getSaveUrl(KUrl("budget"), "application/x-eqonomize", this);
++			KUrl file_url = KFileDialog::getSaveUrl(KUrl("budget"), "*.eqz", this);
+ 			if (!file_url.isEmpty() && file_url.isValid()) {
+ 				return saveURL(file_url);
+ 			} else {
