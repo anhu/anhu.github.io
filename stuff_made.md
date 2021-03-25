@@ -9,6 +9,27 @@ NOTE: Because I would rather spend months making it instead of a few dollars pay
 a|
 a|
 
+image::chess.jpg[float="left"]
+image::chess_light.jpg[float="right"]
+
+The years 2020 and 2021 will always be remembered as the year we lived through the COVID-19 pandemic. I am grateful it won't be the only memory about these years. With the extra time on my hands due to social distancing and my daughter's new found interest in chess, I made this chess set. To some, it might look kind of strange. The design is by Lanier Graham. You can search The Internet for "Lanier Graham chess set".
+
+image::chess_dark.jpg[float="left"]
+image::chess_box.jpg[float="right"]
+
+As you can tell from all the other projects I have made, I don't like wood turning. I wanted to make the pieces and box using only hand tools. With these two parameters in mind the Lanier Graham design seemed the perfect fit.
+
+First I made the chess pieces and then the box. At first my daughter was excited that I was making a new chess set because our old set only had one queen and she wanted a set with extra queens so she could properly promote her pawn. I can't describe how disappointed she was when I explained that an extra queen would not fit in the box.
+
+Later as I was making the box I realized the lid would slide off without a locking mechanism. That is when I realized two queens could act as a locking mechanism.  
+
+
+And now onto the chessboard!!
+
+TIP: The disapointment of a child can inspire some great creativity.
+
+a|
+
 image::junior_whiteboard.jpg[float="right"]
 
 This is the sibling of the whiteboard that you can see lower down.  Its a sibling in that it was made from the same 4 foot by 8 foot sheet of washboard.  This one is much nicer in that I used solid pine mouldings to frame the whole thing and make it stury while minimizing the weight added to the whiteboard.
