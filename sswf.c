@@ -15,35 +15,37 @@
  * limitations under the License.
  */
 
-/* 
- * sswf
- * String Substitution With File 
- * =============================
- * commentary: this probably would have been simpler in just about 
- *             any another language. 
+/*
+ * sswf: String Substitution With File
+ * ===================================
+ * commentary: this probably would have been simpler in just about any other
+ *             language.
+ *
  * function: replace a line containing a match of the substitution string
- *           with the contents of the substitution file in the input file 
- *           and write out results to the output file.  
+ *           with the contents of the substitution file in the input file
+ *           and write out results to the output file.
+ *
  * usage: sswf inputfile substitutionfile outputfile substitutionstring
+ *
  * build: gcc -o sswf sswf.c
  */
 
 #include <stdio.h>
 #include <string.h>
 
-/* 
- * An arbitrary length of strings. 
+/*
+ * An arbitrary length of strings.
  * Please adjust as needed.
  */
-const int LENGTH = 4096;
+#define LENGTH 4096
 
 int main (int argc, char ** argv) {
 	FILE * infptr = NULL;
 	FILE * outfptr = NULL;
 	FILE * subfptr = NULL;
+	char *repl = NULL;
 
-	char line[LENGTH];
-	char repl[LENGTH];
+	char line[LENGTH] = {0};
 
 	if (argc != 5) {
 		fprintf(stderr, "invalid number of params\n");
@@ -56,8 +58,7 @@ int main (int argc, char ** argv) {
 		return 0;
 	}
 
-	//we open and close this file to test that we 
-	//we can properly do it. 
+	/* We open and close this file to test that we can properly do it. */
 	subfptr = fopen(argv[2], "r");
 	if (subfptr == NULL) {
 		fprintf(stderr, "bad substitution file name\n");
@@ -66,7 +67,7 @@ int main (int argc, char ** argv) {
 	}
 	fclose(subfptr);
 	subfptr = NULL;
-	
+
 	outfptr = fopen(argv[3], "w");
 	if (infptr == NULL) {
 		fprintf(stderr, "bad output file name\n");
@@ -74,13 +75,13 @@ int main (int argc, char ** argv) {
 		return 0;
 	}
 
-	strncpy(repl, argv[4], LENGTH);
+	repl = argv[4];
 
 	while (fgets(line, LENGTH, infptr) != NULL) {
 		if (strstr(line, repl) == NULL) {
 			fputs(line, outfptr);
 		} else {
-			//we found a match!!  do the substitution. 
+			/* We found a match! Do the substitution. */
 			subfptr = fopen(argv[2], "r");
 			while(fgets(line, LENGTH, subfptr) != NULL) {
 				fputs(line, outfptr);
@@ -88,8 +89,8 @@ int main (int argc, char ** argv) {
 			fclose(subfptr);
 			subfptr = NULL;
 		}
-	} 
+	}
 	fclose(infptr);
 	fclose(outfptr);
-	return 0;
+	return 1;
 }
