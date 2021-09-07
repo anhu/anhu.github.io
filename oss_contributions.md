@@ -5,6 +5,14 @@ NOTE: Only authorship is claimed.  Unless explicitly stated in the source files,
 
 == Professional ==
 
+=== WolfSSL ===
+
+On August 9, 2021, I started working for WolfSSL. If you would like to see the work that I have done
+with them, please see a list of all my pull requests into WolfSSL repositories. You can do
+so by following the link below:
+
+* https://github.com/search?q=is%3Apr+author%3Aanhu+archived%3Afalse+user%3AwolfSSL+
+
 === BlackBerry Accessibility Guidance and Best Practices Sample Application ===
 
 I was tasked with helping internal application developers work our their plan and approach for how they would implement their Accessibility requirements.  Over and over again, I got questions about how to approach the same problems.  So, I decided to write a sample application to show developers the tricks and techniques to make their applications accessible.   The application shows typical cases of coding pitfalls that happened because of a lack of forethought regarding accessibility.  Each case is then followed by a fix and an explanation of what the fix achieves.  I was then asked to do a presentation based on the application for external developers at BBJam Asia 2013.  Please have a look at the following sample:
