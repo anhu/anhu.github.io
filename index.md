@@ -10,6 +10,7 @@ NOTE: To All the other Anthony Hu's out there, sorry guys, I got http://anthony.
 
 * link:oss_contributions.html[Anthony's Open Source Contributions]
 * link:stuff_made.html[Stuff Anthony Has Made]
+* link:cbcOnePlayer.html[Special Project: CBC RadioOne Player]
 * link:leadership.html[Anthony's Thoughts on Leadership]
 
 === Links ===

@@ -5,3 +5,4 @@ asciidoctor oss_contributions.md
 asciidoctor stuff_made.md
 asciidoctor leadership.md
 asciidoctor fulwear/post.md
+asciidoctor cbcOnePlayer.md
