@@ -1,5 +1,7 @@
 = Building a CBC RadioOne KW Player =
 
+image::cbc.jpg[float="right"]
+
 == Introduction ==
 
 This is NOT:
